@@ -139,7 +139,7 @@ module.exports = (grunt) => {
 					'source-map-support/register',
 					'tests/helpers/set-stubs',
 				],
-				reporter: 'progress',
+				reporter: './reporter/mocha-min.js',
 			},
 			all: ['tests/**/*.spec.ts'],
 		},
