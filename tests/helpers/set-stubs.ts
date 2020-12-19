@@ -1,5 +1,5 @@
-import { browserStub } from '#/stubs/browser';
+import { mockedBrowser } from '#/mock/MockedBrowser';
 import * as webExt from 'webextension-polyfill-ts';
 
 // @ts-ignore
-webExt.browser = browserStub as webExt.Browser;
+webExt.browser = mockedBrowser as webExt.Browser;
